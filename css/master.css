@@ -1,0 +1,56 @@
+body{
+  font-family: sans-serif;
+}
+
+div.button{
+  position: fixed;
+  left: 85.5vw;
+  top: 5vw;
+}
+
+div#button{
+
+  border-radius: 50%;
+  border: 5vw solid #000;
+
+  transition: all 2s ease-out;
+}
+
+.boxdim{
+  width: 0;
+  height: 0;
+}
+
+.boxbig{
+  transform: scale(50);
+  height: .25vw;
+  width: .25vw;
+}
+
+section.content{
+  width: 70vw;
+  margin: 0 auto;
+}
+
+div.boxes{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ul{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+ul.menu>li{
+  font-size: 13vw;
+  color: #fff;
+
+  display: none;
+
+  transition: display 0 ease-in;
+}
