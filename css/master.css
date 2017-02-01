@@ -8,17 +8,17 @@ div.button{
   top: 5vw;
 }
 
+.boxdim{
+  width: 0;
+  height: 0;
+}
+
 div#button{
 
   border-radius: 50%;
   border: 5vw solid #000;
 
   transition: all 2s ease-out;
-}
-
-.boxdim{
-  width: 0;
-  height: 0;
 }
 
 .boxbig{
@@ -51,6 +51,11 @@ ul.menu>li{
   color: #fff;
 
   display: none;
-
+  transform-origin: center;
   transition: display 0 ease-in;
+  transition: transform 2s ease-in-out;
+}
+
+.spin{
+  transform: rotate(360deg);
 }
