@@ -10,3 +10,7 @@ $('.trigger3').on('click', function(){
   $(this).toggleClass('is-paused');
   /* Act on the event */
 });
+
+$(function(){
+  $('.draggable').draggable();
+});
