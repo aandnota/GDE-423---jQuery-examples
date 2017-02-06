@@ -1,0 +1,76 @@
+.content{
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trigger{
+  width: 25vw;
+  height: 25vw;
+  border: 20px solid #939393;
+  background-color: #c7c7c7;
+}
+
+.box{
+  background-color: #f4a08a;
+  width: 25vw;
+  height: 25vw;
+
+  transition: transform 300ms ease-in-out;
+  transform-origin: bottom right;
+  pointer-events: none;
+}
+
+.trigger.clicked .box{
+  transform: rotate(180deg);
+}
+
+.trigger2{
+  margin: 2vw 0;
+  width: 25vw;
+  height: 25vw;
+  background-color: #f961f3;
+  border-radius: 0;
+
+  transition:
+    border-radius 300ms ease-in-out,
+    background-color 300ms ease-in-out,
+    transform 500ms ease-in-out;
+}
+
+.trigger2.clicked{
+  transform: rotate(180deg);
+  border-radius: 50%;
+  background-color: #0b1493;
+
+}
+
+
+/*KEYFRAMES*/
+
+.trigger3{
+  background-color: #52e995;
+  width: 25vw;
+  height: 25vw;
+  position: relative;
+  animation: grow 2s linear 0s infinite;
+}
+
+@keyframes grow {
+  0%{
+    height: 25vw;
+
+  }
+  50%{
+    height: 50vw;
+
+    background-color: #14c0c6;
+  }
+  100%{
+    height: 75vw;
+
+    background-color: rgb(47, 83, 249);
+  }
+
+}
