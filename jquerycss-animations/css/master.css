@@ -50,11 +50,15 @@
 /*KEYFRAMES*/
 
 .trigger3{
+  margin: 2vw 0;
   background-color: #52e995;
   width: 25vw;
   height: 25vw;
-  position: relative;
-  animation: grow 2s linear 0s infinite;
+  animation: grow 2s linear 0s 4 alternate;
+}
+
+.trigger3.is-paused{
+  animation-play-state: paused;
 }
 
 @keyframes grow {
