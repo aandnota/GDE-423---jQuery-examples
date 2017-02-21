@@ -12,5 +12,10 @@ $('.trigger3').on('click', function(){
 });
 
 $(function(){
-  $('.draggable').draggable();
+  $('.draggable').draggable(),
+  $('.draggable').addClass('is-absolute')
 });
+
+$(function(){
+  $('#accordion').accordion();
+})
